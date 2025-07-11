@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Student Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Smart Student Dashboard</h1>
+      <button id="theme-toggle">Toggle Theme</button>
+    </header>
+
+    <main>
+      <section class="student-switcher">
+        <h2>Select Student</h2>
+        <select name="students" id="student-tabs" aria-label="students">
+          <!-- Dynamically add buttons/tabs here -->
+        </select>
+      </section>
+
+      <section class="student-card">
+        <img src="" alt="" id="student-avatar" />
+        <div>
+          <h2 id="student-name"></h2>
+          <p>Age: <span id="student-age"></span></p>
+          <p>Class: <span id="student-grade"></span></p>
+        </div>
+      </section>
+
+      <section class="summary">
+        <h2>Summary</h2>
+        <ul>
+          <li>Total Subjects: <span id="total-subjects">5</span></li>
+          <li>Average Score: <span id="avg-score">74.2</span></li>
+          <li>Subjects Passed: <span id="passed-count">5</span></li>
+        </ul>
+      </section>
+
+      <section class="subject-table">
+        <h2>Subjects</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Subject</th>
+              <th>Marks</th>
+              <th>Grade</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="subject-data">
+            <!-- JS will populate -->
+          </tbody>
+        </table>
+      </section>
+
+      <section class="highlights">
+        <h2>Highlights</h2>
+        <p>Top Subject: <span id="top-subject"></span></p>
+        <p>Lowest Subject: <span id="low-subject"></span></p>
+      </section>
+    </main>
+
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>
