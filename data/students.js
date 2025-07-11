@@ -4,7 +4,7 @@ export const students = [
     name: "Nick Jones",
     age: 16,
     grade: "10th",
-    avatar: "./assets/student-1.jpg",
+    avatar: "./assets/Student-1.jpg",
     subjects: [
       { name: "Math", marks: 87 },
       { name: "English", marks: 73 },
@@ -18,7 +18,7 @@ export const students = [
     name: "Sofia Shwadsmiller",
     age: 15,
     grade: "10th",
-    avatar: "./assets/student-2.jpg",
+    avatar: "./assets/Student-2.jpg",
     subjects: [
       { name: "Math", marks: 45 },
       { name: "English", marks: 52 },
@@ -32,7 +32,7 @@ export const students = [
     name: "Sara Khan",
     age: 17,
     grade: "11th",
-    avatar: "./assets/student-3.jpg",
+    avatar: "./assets/Student-3.jpg",
     subjects: [
       { name: "Math", marks: 92 },
       { name: "English", marks: 81 },
@@ -46,7 +46,7 @@ export const students = [
     name: "Aman Verma",
     age: 16,
     grade: "11th",
-    avatar: "./assets/student-4.jpg",
+    avatar: "./assets/Student-4.jpg",
     subjects: [
       { name: "Math", marks: 33 },
       { name: "English", marks: 41 },
@@ -60,7 +60,7 @@ export const students = [
     name: "Chris Levingson",
     age: 15,
     grade: "10th",
-    avatar: "./assets/student-5.jpg",
+    avatar: "./assets/Student-5.jpg",
     subjects: [
       { name: "Math", marks: 78 },
       { name: "English", marks: 65 },
