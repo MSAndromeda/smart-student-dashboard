@@ -13,6 +13,7 @@
   --border: #d1d5db;
   --success: #22c55e;
   --danger: #ef4444;
+  --shadow-color: rgba(0, 0, 0, 0.514);
 }
 
 body.dark {
@@ -20,9 +21,10 @@ body.dark {
   --text: #f5f5f5;
   --card: #1e1e1e;
   --primary: #818cf8;
-  --border: #d1d5db;
+  --border: #464647;
   --success: #4ade80;
   --danger: #f87171;
+  --shadow-color: rgb(226, 215, 215);
 }
 
 body {
@@ -30,6 +32,7 @@ body {
   background-color: var(--bg);
   color: var(--text);
   padding: 1rem;
+  transition: color 0.5s ease, background-color 0.5s ease;
 }
 
 header {
@@ -42,10 +45,12 @@ header {
 #theme-toggle {
   border: 0;
   padding: 0.25rem;
+  padding-block-start: 0.35rem;
   font-size: 1rem;
   text-align: center;
   border-radius: 0.65rem;
   background-color: var(--primary);
+  appearance: none;
 }
 
 .lucide-sun-medium {
@@ -60,6 +65,16 @@ main {
   padding: 1rem;
   background-color: var(--primary);
   gap: 2rem;
+}
+
+#student-tabs {
+  margin-block: 0.5rem;
+  font-size: 1.1rem;
+  border: 0;
+  box-shadow: 2px 2px 8px var(--shadow-color);
+  background-color: var(--bg);
+  color: var(--text);
+  transition: box-shadow 0.5s ease;
 }
 
 section {
