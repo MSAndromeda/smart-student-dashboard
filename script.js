@@ -7,6 +7,19 @@ const summary = document.querySelector(".summary");
 const tableBody = document.querySelector("#subject-data");
 const highlight = document.querySelector(".highlights");
 
+// # Toggle Theme
+const themeToggle = document.getElementById("theme-toggle");
+
+themeToggle.addEventListener("click", function () {
+  document.body.classList.toggle("dark");
+  const isDark = document.body.classList.contains("dark");
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+});
+
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark") document.body.classList.add("dark");
+
+//////////////////////////////////////////////////////////////////////
 // #Student Switcher
 const studentTabs = document.getElementById("student-tabs");
 // console.log(studentTabs);
@@ -69,7 +82,9 @@ function subjectDataRender(subjects) {
   <td>${subject.name}</td>
   <td>${subject.marks}</td>
   <td>${grade(subject.marks)}</td>
-  <td>${subject.marks >= 35 ? "Pass" : "Fail"}</td>
+  <td class="status-${subject.marks >= 35 ? "pass" : "fail"}">${
+        subject.marks >= 35 ? "Pass" : "Fail"
+      }</td>
 </tr>`
     )
     .join("\n");

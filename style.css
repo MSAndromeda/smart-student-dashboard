@@ -2,13 +2,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 :root {
   --bg: #f9fafb;
   --text: #333333;
   --card: #ffffff;
+  --primary: #81d4f5;
   --border: #d1d5db;
+  --success: #22c55e;
+  --danger: #ef4444;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #f5f5f5;
+  --card: #1e1e1e;
+  --primary: #818cf8;
+  --border: #d1d5db;
+  --success: #4ade80;
+  --danger: #f87171;
 }
 
 body {
@@ -25,11 +39,26 @@ header {
   margin-block-end: 2rem;
 }
 
+#theme-toggle {
+  border: 0;
+  padding: 0.25rem;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 0.65rem;
+  background-color: var(--primary);
+}
+
+.lucide-sun-medium {
+  color: var(--text);
+}
+
 main {
   display: flex;
   flex-direction: column;
   margin: auto;
   max-width: 40rem;
+  padding: 1rem;
+  background-color: var(--primary);
   gap: 2rem;
 }
 
@@ -63,4 +92,11 @@ td {
   padding-block: 0.25rem;
   text-align: left;
   border-bottom: 1px solid var(--border);
+}
+
+.status-pass {
+  color: var(--success);
+}
+.status-fail {
+  color: var(--danger);
 }
